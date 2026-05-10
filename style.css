@@ -1,0 +1,280 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: #b22222;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+header p {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+  background-color: #8b0000;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+/* ===== SECTION ===== */
+section {
+  margin-bottom: 50px;
+}
+
+.section-title {
+  font-size: 22px;
+  color: #b22222;
+  border-bottom: 2px solid #b22222;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+/* ===== KARTU TOKOH ===== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card-top {
+  background-color: #b22222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-top .icon {
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+.card-top h3 {
+  font-size: 17px;
+}
+
+.card-top span {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.card-body p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #f0e0e0;
+  color: #b22222;
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-body ul {
+  padding-left: 18px;
+}
+
+.card-body ul li {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.asal {
+  font-size: 12px;
+  color: #888;
+  margin-top: 8px;
+}
+
+.asal::before {
+  content: "📍 ";
+}
+
+/* ===== TABEL PENINGGALAN ===== */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-size: 13px;
+}
+
+thead {
+  background-color: #b22222;
+  color: white;
+}
+
+thead th {
+  padding: 12px 14px;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fdf5f5;
+}
+
+tbody td {
+  padding: 11px 14px;
+  border-bottom: 1px solid #eee;
+  vertical-align: top;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* ===== LOKASI ===== */
+.lokasi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.lokasi-card {
+  background: white;
+  border-left: 4px solid #b22222;
+  border-radius: 6px;
+  padding: 14px 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.lokasi-card h4 {
+  font-size: 14px;
+  color: #b22222;
+  margin-bottom: 4px;
+}
+
+.lokasi-card p {
+  font-size: 13px;
+  color: #555;
+}
+
+.lokasi-card .kota {
+  font-size: 12px;
+  color: #888;
+  margin-top: 6px;
+}
+
+/* ===== SUMBER ===== */
+.sumber-list {
+  background: white;
+  border-radius: 8px;
+  padding: 20px 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sumber-list h3 {
+  font-size: 15px;
+  color: #b22222;
+  margin-bottom: 10px;
+  margin-top: 16px;
+}
+
+.sumber-list h3:first-child {
+  margin-top: 0;
+}
+
+.sumber-list ol,
+.sumber-list ul {
+  padding-left: 20px;
+}
+
+.sumber-list li {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+
+.sumber-list a {
+  color: #b22222;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #333;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+}
+
+footer p {
+  margin-bottom: 4px;
+}
+
+.footer-kecil {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 8px;
+}
